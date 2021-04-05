@@ -64,7 +64,7 @@ header {
   position: fixed;
   left: 240px;
   top: 0;
-  z-index: 100;
+  z-index:100;
   width: calc(100% - 240px);
   background: #fff;
   height: 60px;
@@ -112,10 +112,10 @@ header {
 
 
 main {
-  margin-top: 60px:
-  background: green;
-  min-height: 90vh;
-  padding: 1rem;
+    margin-top: 30px;
+    background: #f1f5f9 ;
+    min-height: 90vh;
+    padding: 2.5rem;
 }
 
 .dash-title {
@@ -124,7 +124,7 @@ main {
 }
 .dashboard-cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 5rem;
 }
 
@@ -137,14 +137,14 @@ main {
 .card-body {
   padding: 1rem;
   display: flex;
- align-items: center; 
+   align-items: center; 
 }
 
 
 
 .card-body span {
   font-size: 1.7rem;
-  color: dodgerblue;
-  padding-left: 1rem;
+  color: #777;
+  padding-right: 1rem;
 
 }
