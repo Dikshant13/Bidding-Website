@@ -147,7 +147,7 @@ main {
 .card-body span {
   font-size: 1.5rem;
   color: #777;
-  padding-right: 1.3rem;
+  padding-right: 1.4rem;
 
 }
 
@@ -171,3 +171,6 @@ main {
 .card-footer a{
   color: var(--main-color);
 }
+
+
+
