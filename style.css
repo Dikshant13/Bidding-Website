@@ -41,12 +41,14 @@
   padding: 1rem;
 }
 
+
+
 .sidebar li {
   margin-bottom: 1rem;
 }
 
 .sidebar a { 
-  color: yellow;
+  color: #fff;
   font-size: .9rem;
 }
 
@@ -105,7 +107,7 @@ header {
   width: 38px;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url();
+  background-image: url() ;
   border-radius: 50%;
 }
 
@@ -179,3 +181,62 @@ main {
   text-align: left;
   margin-right: 5px;
 }
+
+
+
+/*-------------------------------*/
+
+
+
+
+.accordion {
+  background-color: #027581;
+  color: white;
+  cursor: pointer;
+  padding: 0px 0px 14px;
+  width: 50%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #027581;
+  color: black;
+  font-size: 15px;
+
+  
+}
+
+
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: center;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+
+}
+.panel span {
+  padding: 0px;
+
+}
+
+
+
+.panel {
+  padding: 0 20px;
+  background-color: #027581;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+
