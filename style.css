@@ -1,21 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
-:root  {
-    --main-color :#027581;
-    --color-dark :#1D2231;
-    --text-grey :#8390A2;
-
+:root {
+  --main-color: #027581;
+  --color-dark: #1d2231;
+  --text-grey: #8390a2;
 }
 
 * {
-    font-family: 'Poppins',sans-serif;
+  font-family: "Poppins", sans-serif;
 
-    margin: 0;
-    padding:0;
-    text-decoration: none;
-    list-style-type: none;
-    box-sizing: border-box;
-  
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
 }
 .sidebar {
   height: 100%;
@@ -24,7 +22,7 @@
   left: 0;
   top: 0;
   z-index: 100;
-  background:var(--main-color);
+  background: var(--main-color);
   color: #fff;
   overflow-y: auto;
 }
@@ -58,17 +56,16 @@
   margin-bottom: 1rem;
 }
 
-.sidebar a { 
+.sidebar a {
   color: #fff;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 .sidebar a span:last-child {
-  padding-left : .6rem;
+  padding-left: 0.6rem;
 }
 
-
-.main-content  {
+.main-content {
   position: relative;
   margin-left: 240px;
 }
@@ -77,7 +74,7 @@ header {
   position: fixed;
   left: 240px;
   top: 0;
-  z-index:100;
+  z-index: 100;
   width: calc(100% - 240px);
   background: #fff;
   height: 60px;
@@ -93,24 +90,20 @@ header {
   align-items: center;
 }
 .search-wrapper input {
-  border :0;
+  border: 0;
   outline: 0;
   padding: 1rem;
   height: 38px;
 }
 
-
-
 .social-icons {
   display: flex;
   align-items: center;
-
 }
 
 .social-icons span,
 .social-icons div {
   margin-left: 1.2rem;
-
 }
 
 .social-icons div {
@@ -118,22 +111,20 @@ header {
   width: 38px;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url() ;
+  background-image: url();
   border-radius: 50%;
 }
 
-
-
 main {
-    margin-top: 30px;
-    background: #f1f5f9 ;
-    min-height: 90vh;
-    padding: 2.5rem 3rem;
+  margin-top: 30px;
+  background: #f1f5f9;
+  min-height: 90vh;
+  padding: 2.5rem 3rem;
 }
 
 .dash-title {
   color: var(--color-dark);
-  margin-bottom:  1rem;
+  margin-bottom: 1rem;
 }
 .dashboard-cards {
   display: grid;
@@ -142,50 +133,42 @@ main {
 }
 
 .card-single {
-  background : #fff;
+  background: #fff;
   border-radius: 7px;
-  box-shadow: 2px 2px 2px rgba(0,0,0,.2);
-
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
-
 
 .card-body {
   padding: 1.3rem 1rem;
   display: flex;
-   align-items: center; 
+  align-items: center;
 }
-
-
 
 .card-body span {
   font-size: 1.5rem;
   color: #777;
   padding-right: 1.4rem;
-
 }
 
 .card-body h5 {
   color: var(--text-grey);
   font-size: 1rem;
-
 }
 
 .card-body h4 {
   color: var(--color-dark);
   font-size: 1.1rem;
-  margin-top: .2rem;
+  margin-top: 0.2rem;
 }
 
 .card-footer {
-  padding: .2rem 1rem;
-  background :#faf9fc;
+  padding: 0.2rem 1rem;
+  background: #faf9fc;
 }
 
-.card-footer a{
+.card-footer a {
   color: var(--main-color);
 }
-
-
 
 #copyrights {
   margin-left: 10px;
@@ -193,12 +176,14 @@ main {
   margin-right: 5px;
 }
 
-
+.row-fields {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+}
 
 /*-------------------------------*/
-
-
-
 
 .accordion {
   background-color: #027581;
@@ -213,18 +198,15 @@ main {
   transition: 0.4s;
 }
 
-.active, .accordion:hover {
+.active,
+.accordion:hover {
   background-color: #027581;
   color: black;
   font-size: 15px;
-
-  
 }
 
-
-
 .accordion:after {
-  content: '\002B';
+  content: "\002B";
   color: #777;
   font-weight: bold;
   float: center;
@@ -233,14 +215,10 @@ main {
 
 .active:after {
   content: "\2212";
-
 }
 .panel span {
   padding: 0px;
-
 }
-
-
 
 .panel {
   padding: 0 20px;
@@ -249,5 +227,3 @@ main {
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
-
-
