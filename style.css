@@ -41,7 +41,18 @@
   padding: 1rem;
 }
 
+.sidebar-menu span:hover {
+  background-color: #027581;
+  color: black;
+  font-size: 15px;
 
+
+  padding: 0px 10px ;
+  text-align: center;
+
+  transition: 0.5s;
+
+}
 
 .sidebar li {
   margin-bottom: 1rem;
