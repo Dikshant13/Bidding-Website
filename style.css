@@ -32,11 +32,23 @@
   justify-content: space-between;
   align-items: center;
   height: 60px;
-  padding: 0rem 1rem;
+  padding: 0px 16px;
 }
 
 .sidebar-menu {
-  padding: 1rem;
+  padding: 16px;
+}
+
+.icon span {
+  margin-top: 0px;
+}
+
+.icon {
+  font-size: 15px;
+}
+
+br {
+  color: rgba(0, 0, 0, 0);
 }
 
 .sidebar-menu span:hover {
@@ -49,7 +61,7 @@
 }
 
 .sidebar li {
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
 }
 
 .sidebar a {
@@ -66,7 +78,7 @@
   margin-left: 240px;
 }
 
-header {
+my-header {
   position: fixed;
   left: 240px;
   top: 0;
@@ -174,11 +186,47 @@ main {
   margin-right: 5px;
 }
 
-.row-fields {
+.row-title {
+  font-weight: bold;
+  font-size: large;
+  padding: 5px 0px 5px 0px;
+  color: #212529;
+}
+
+.row {
   display: flex;
   flex-direction: row;
   align-items: stretch;
   justify-content: space-between;
+  padding: 5px 15px 5px 15px;
+}
+
+.bidfield {
+  margin-top: 10px;
+}
+
+.sub-row {
+  color: #777;
+  font-weight: lighter;
+}
+
+.my-label {
+  line-height: 1.7;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: black;
+  font-weight: lighter;
+  text-overflow: ellipsis;
+  display: inline-block;
+  white-space: inherit;
+}
+
+.row-fields {
+  display: flex;
+  /* flex-direction: row; */
+  align-items: left;
+  justify-content: space-between;
+  padding: 0px 15px 0px 15px;
 }
 
 /*-------------------------------*/
@@ -187,10 +235,10 @@ main {
   background-color: #027581;
   color: white;
   cursor: pointer;
-  padding: 0px 0px 14px;
+  padding: 0px 0px 14px 5px;
   width: 50%;
   border: none;
-  text-align: center;
+  text-align: left;
   outline: none;
   font-size: 15px;
   transition: 0.4s;
@@ -215,11 +263,11 @@ main {
   content: "\2212";
 }
 
-.panel span {
+.my-panel span {
   padding: 0px;
 }
 
-.panel {
+.my-panel {
   padding: 0 20px;
   background-color: #027581;
   max-height: 0;

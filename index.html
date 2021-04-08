@@ -21,10 +21,10 @@
 <body>
   <div class="sidebar">
     <div class="sidebar-header">
-      <h3 class="brand">
+      <h4 class="brand">
         <span class="fa fa-spinner"></span>
-        <span>Thinksprout<br></span>
-      </h3>
+        <span style="font-weight: bold;font-size:100%;">Thinksprout<br></span>
+      </h4>
       <span class="ti-menu-alt"></span>
     </div>
 
@@ -69,7 +69,7 @@
             <span class="ti-agenda"></span>
 
             <button class="accordion">Messages</button>
-            <div class="panel">
+            <div class="my-panel">
               <span>inbox</span>
               <br>
               <span>sent</span>
@@ -79,7 +79,7 @@
 
         <span class="fa fa-envelope-o"></span>
         <button class="accordion">Messages</button>
-        <div class="panel">
+        <div class="my-panel">
 
           <a href="">
             <span class="fa fa-inbox"></span>
@@ -96,7 +96,7 @@
 
         <span class="fa fa-home"></span>
         <button class="accordion">Profile</button>
-        <div class="panel">
+        <div class="my-panel">
           <a href="">
             <span class="fa fa-tags"></span>
             <span>Basic info</span>
@@ -173,20 +173,19 @@
   </div>
 
   <div class="main-content">
-    <header>
+    <my-header>
       <div class="search-wrapper">
         <span class="ti-search"> </span>
         <input type="search" placeholder="search">
       </div>
 
       <div class="social-icons">
-        <span class="fa fa-envelope"></span>
-        <span class="ti-bell"></span>
-        <span class="fa fa-question-circle-o"></span>
-        <span class="fa fa-user-circle-o"></span>
+        <i class=" fa fa-envelope fa-lg"></i>
+        <span class="ti-bell fa-lg"></span>
+        <span class="fa fa-question-circle-o fa-lg"></span>
+        <span class="fa fa-user-circle-o fa-lg"></span>
       </div>
-    </header>
-
+    </my-header>
     <main>
       <h2 class="dash-title">Overview</h2>
 
@@ -196,7 +195,7 @@
           <div class="card-body">
             <!--  <span class="ti-plane"></span> -->
 
-            <span class="fa fa-paper-plane" style="font-size:28px" ;></span>
+            <span class="fa fa-paper-plane fa-lg" style="font-size:28px" ;></span>
             <div>
               <h5>Leads </h5>
               <h4>2</h4>
@@ -211,7 +210,7 @@
 
         <div class="card-single">
           <div class="card-body">
-            <span class="fa fa-gavel" style="font-size:28px" ;></span>
+            <span class="fa fa-gavel fa-lg" style="font-size:28px" ;></span>
             <div>
               <h5>Bids</h5>
               <h4>24</h4>
@@ -229,7 +228,7 @@
 
         <div class="card-single">
           <div class="card-body">
-            <span class="fa fa-bullseye" style="font-size:28px" ;></span>
+            <span class="fa fa-bullseye fa-lg" style="font-size:28px" ;></span>
             <div>
               <h5>Projects</h5>
               <h4>
@@ -245,7 +244,7 @@
 
         <div class="card-single">
           <div class="card-body">
-            <span class="fa fa-rocket" style="font-size:28px"></span>
+            <span class="fa fa-rocket fa-lg" style="font-size:28px"></span>
             <div>
               <h5>Deleveries</h5>
               <h4>
@@ -267,8 +266,8 @@
           <!-- Card -->
           <div class="card" style="margin: 0 auto; background-color: White; margin-top: 50px;">
             <div class="row" style="margin: 0 auto; background-color: #f1f1f1; border: 1px solid lightgray;">
-              <div class="col-sm-12 title">
-                <span style="font-weight: bold; font-size: large; margin-left: 20px; color: #212529;">Britannia |
+              <div class="row-title col-sm-12 title">
+                <span>Britannia |
                   Product Animation Window - 2nd Project</span>
 
               </div>
@@ -286,21 +285,20 @@
                   </div>
                   <div>
                     <h4>
-                      <span class="label"
-                        style="line-height: 1.7; color: black;text-overflow: ellipsis;display: inline-block;white-space: inherit;">This
+                      <div class="my-label">This
                         is a similar requirement to our earlier post but for a different category i.e. Britannia Treat
                         Wafers. The details are in the attachment.
-                        We need the agency to make a 10 Sec product animation wi...</span>
+                        We need the agency to make a 10 Sec product animation wi...</div>
                     </h4>
                   </div>
                 </div>
               </div>
-              <div class="row-fields">
-                <div class="col-sm-3">
+              <div class="row-fields ">
+                <div class=" option col-sm-3">
                   <div class="bidfield">
                     <h5>Project Category</h5>
                   </div>
-                  <div>
+                  <div class="sub-row">
                     <h4>
                       <span>Any Other</span>
                     </h4>
@@ -310,7 +308,7 @@
                   <div class="bidfield">
                     <h5>Project Type</h5>
                   </div>
-                  <div>
+                  <div class="sub-row">
                     <h4>
                       <span>Outsource Project</span>
                     </h4>
@@ -320,7 +318,7 @@
                   <div class="bidfield">
                     <h5>Customer Industry</h5>
                   </div>
-                  <div>
+                  <div class="sub-row">
                     <h4>
                       <span>Select Company Industry</span>
                     </h4>
@@ -330,7 +328,7 @@
                   <div class="bidfield">
                     <h5>Budget</h5>
                   </div>
-                  <div>
+                  <div class="sub-row">
                     <h4>
                       <span> - Fixed</span>
                       <span></span>
@@ -362,7 +360,7 @@
   </div>
 
 
-  <!--  adding colapsible panels in sidebar -->
+  <!--  adding colapsible my-panels in sidebar -->
   <script>
     var acc = document.getElementsByClassName("accordion");
     var i;
@@ -370,11 +368,11 @@
     for (i = 0; i < acc.length; i++) {
       acc[i].addEventListener("click", function () {
         this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.maxHeight) {
-          panel.style.maxHeight = null;
+        var myPanel = this.nextElementSibling;
+        if (myPanel.style.maxHeight) {
+          myPanel.style.maxHeight = null;
         } else {
-          panel.style.maxHeight = panel.scrollHeight + "px";
+          myPanel.style.maxHeight = myPanel.scrollHeight + "px";
         }
       });
     }
