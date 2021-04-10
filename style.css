@@ -8,7 +8,7 @@
 
 * {
   font-family: "Poppins", sans-serif;
-  margin: 0;
+  margin: unset;
   padding: 0;
   text-decoration: none;
   list-style-type: none;
@@ -21,7 +21,7 @@
   position: fixed;
   left: 0;
   top: 0;
-  z-index: 100;
+  /* z-index: 100; */
   background: var(--main-color);
   color: #fff;
   overflow-y: auto;
@@ -35,7 +35,7 @@
   padding: 0px 16px;
 }
 
-.sidebar-menu {
+.sidebar-menu1 {
   padding: 16px;
 }
 
@@ -51,13 +51,44 @@ br {
   color: rgba(0, 0, 0, 0);
 }
 
-.sidebar-menu span:hover {
+.sidebar-menu1 div:hover {
+  text-decoration: underline;
   background-color: #027581;
   color: black;
+}
+
+.accordion:hover {
+  color: black;
+  text-decoration: underline;
+  background-color: #027581;
+}
+
+.sidebar-menu1 span:hover {
+  color: black;
+  text-decoration: underline;
+  background-color: #027581;
+}
+
+.sidebar-menu1 div {
   font-size: 15px;
-  padding: 0px 10px;
-  text-align: center;
-  transition: 0.5s;
+}
+
+.sidebar-menu1 div {
+  font-size: 15px;
+}
+/*  */
+/* .sidebar-menu1 span:hover { */
+/* background-color: #027581; */
+/* color: black; */
+/* font-size: 24px; */
+/* padding: 0px 10px; */
+/* text-align: center; */
+/* transition: 0.5s; */
+/* } */
+
+
+.sidebar-menu1 span {
+  font-size: 15px;
 }
 
 .sidebar li {
@@ -101,7 +132,7 @@ my-header {
 .search-wrapper input {
   border: 0;
   outline: 0;
-  padding: 1rem;
+  padding: 16px;
   height: 38px;
 }
 
@@ -131,15 +162,20 @@ main {
   padding: 2.5rem 3rem;
 }
 
-.dash-title {
+.dash-title h2 {
   color: var(--color-dark);
   margin-bottom: 1rem;
+  font-size: 24px;
 }
 
 .dashboard-cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 3rem;
+}
+
+.container-fluid1 {
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
 }
 
 .card-single {
@@ -149,7 +185,7 @@ main {
 }
 
 .card-body {
-  padding: 1.3rem 1rem;
+  padding: 9px 12px;
   display: flex;
   align-items: center;
 }
@@ -162,13 +198,13 @@ main {
 
 .card-body h5 {
   color: var(--text-grey);
-  font-size: 1rem;
+  font-size: 16px;
 }
 
 .card-body h4 {
   color: var(--color-dark);
-  font-size: 1.1rem;
-  margin-top: 0.2rem;
+  font-size: 17px;
+  margin-top: 2px;
 }
 
 .card-footer {
@@ -243,14 +279,14 @@ main {
   font-size: 15px;
   transition: 0.4s;
 }
-
+/*  */
 .active,
 .accordion:hover {
   background-color: #027581;
   color: black;
   font-size: 15px;
 }
-
+/*  */
 .accordion:after {
   content: "\002B";
   color: #777;
@@ -274,3 +310,4 @@ main {
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
+
