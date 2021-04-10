@@ -21,7 +21,7 @@
   position: fixed;
   left: 0;
   top: 0;
-  z-index: 100;
+  /* z-index: 100; */
   background: var(--main-color);
   color: #fff;
   overflow-y: auto;
@@ -35,7 +35,7 @@
   padding: 0px 16px;
 }
 
-.sidebar-menu {
+.sidebar-menu1 {
   padding: 16px;
 }
 
@@ -51,13 +51,43 @@ br {
   color: rgba(0, 0, 0, 0);
 }
 
-.sidebar-menu span:hover {
+.sidebar-menu1 div:hover {
+  text-decoration: underline;
   background-color: #027581;
+}
+
+.accordion:hover {
   color: black;
+  text-decoration: underline;
+  background-color: #027581;
+}
+
+.sidebar-menu1 span:hover {
+  color: black;
+  text-decoration: underline;
+  background-color: #027581;
+}
+
+.sidebar-menu1 div {
   font-size: 15px;
-  padding: 0px 10px;
-  text-align: center;
-  transition: 0.5s;
+}
+
+.sidebar-menu1 div {
+  font-size: 15px;
+}
+/*  */
+/* .sidebar-menu1 span:hover { */
+/* background-color: #027581; */
+/* color: black; */
+/* font-size: 24px; */
+/* padding: 0px 10px; */
+/* text-align: center; */
+/* transition: 0.5s; */
+/* } */
+
+
+.sidebar-menu1 span {
+  font-size: 15px;
 }
 
 .sidebar li {
@@ -131,9 +161,10 @@ main {
   padding: 2.5rem 3rem;
 }
 
-.dash-title {
+.dash-title h2 {
   color: var(--color-dark);
   margin-bottom: 1rem;
+  font-size: 202px;
 }
 
 .dashboard-cards {
@@ -149,7 +180,7 @@ main {
 }
 
 .card-body {
-  padding: 1.3rem 1rem;
+  padding: 9px 12px;
   display: flex;
   align-items: center;
 }
@@ -162,13 +193,13 @@ main {
 
 .card-body h5 {
   color: var(--text-grey);
-  font-size: 1rem;
+  font-size: 16px;
 }
 
 .card-body h4 {
   color: var(--color-dark);
-  font-size: 1.1rem;
-  margin-top: 0.2rem;
+  font-size: 17px;
+  margin-top: 2px;
 }
 
 .card-footer {
@@ -244,24 +275,24 @@ main {
   transition: 0.4s;
 }
 
-.active,
-.accordion:hover {
-  background-color: #027581;
-  color: black;
-  font-size: 15px;
-}
-
-.accordion:after {
-  content: "\002B";
-  color: #777;
-  font-weight: bold;
-  float: center;
-  margin-left: 5px;
-}
-
-.active:after {
-  content: "\2212";
-}
+/* .active, */
+/* .accordion:hover { */
+/* background-color: #027581; */
+/* color: black; */
+/* font-size: 15px; */
+/* } */
+/*  */
+/* .accordion:after { */
+/* content: "\002B"; */
+/* color: #777; */
+/* font-weight: bold; */
+/* float: center; */
+/* margin-left: 5px; */
+/* } */
+/*  */
+/* .active:after { */
+/* content: "\2212"; */
+/* } */
 
 .my-panel span {
   padding: 0px;
