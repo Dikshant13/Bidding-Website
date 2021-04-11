@@ -262,7 +262,7 @@ main {
   /* flex-direction: row; */
   align-items: left;
   justify-content: space-between;
-  padding: 0px 15px 0px 15px;
+  padding: 0px 15px 15px 15px;
 }
 
 /*-------------------------------*/
