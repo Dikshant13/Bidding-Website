@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css?family=Rowdies:400,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Caveat Brush:400,500,600,700&display=swap");
+
+.outer-container {
+  width: 80vw;
+  height: max-content;
+  float: left;
+  margin-left: 30px;
+}
+
+.container {
+  width: 80vw;
+  margin: 70px 30px;
+  float: inline-end;
+}
+
+.container-inner {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.Bid,
+.Project,
+.contract,
+.delivery {
+  width: 25%;
+  background-color: #fff;
+  height: 60px;
+  float: left;
+  font-size: large;
+  line-height: 60px;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.Project_tab,
+.Bid_tab,
+.Contract_tab,
+.Delivery_tab {
+  background-color: #fff;
+  box-sizing: border-box;
+
+  /* padding: 20px; */
+
+  clear: both;
+  width: 100%;
+  padding-top: 0%;
+}
+
+.Project_tab .title,
+.Project_tab .date,
+.Project_tab .company,
+.Project_tab .status,
+.Project_tab .description {
+  width: 100%;
+  padding: 20px;
+  line-height: 25px;
+  float: left;
+}
+
+.inline {
+  display: flex;
+  flex-direction: row;
+}
+
+.Bid_tab .bidamount {
+  width: 50%;
+  padding: 20px;
+  line-height: 25px;
+  float: left;
+}
+
+.Bid_tab .date {
+  width: 50%;
+  padding: 20px;
+  line-height: 25px;
+  float: right;
+}
+
+.Bid_tab .estimation {
+  width: 100%;
+  padding: 20px;
+  line-height: 25px;
+  float: left;
+}
+
+.Contract_tab .projectvalue,
+.Contract_tab .duration,
+.Contract_tab .startdate,
+.Contract_tab .enddate,
+.Contract_tab .clientname,
+.Contract_tab .clientnumber {
+  width: 100%;
+  padding: 20px;
+  line-height: 25px;
+}
+
+.Delivery_tab .paymentrequest {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  line-height: 40px;
+  background: orange;
+  border-radius: 3px;
+  padding: 10px;
+  width: auto;
+}
+
+.Delivery_tab .amount,
+.Delivery_tab .date,
+.Delivery_tab .attachments {
+  line-height: 25px;
+  width: 33.33%;
+  padding: 20px;
+}
+
+.Delivery_tab .remarks,
+.Delivery_tab .status {
+  width: 100%;
+  padding: 20px;
+  line-height: 25px;
+}
+
+ 

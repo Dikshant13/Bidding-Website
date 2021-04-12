@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<?php include "connect.php"; ?>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Benchkart</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--  -->
+  <!-- f -->
+  <!-- f -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="project-style.css" />
+
+</head>
+
+<body>
+  <div class="sidebar">
+    <div class="sidebar-header">
+      <h4 class="brand">
+        <span class="fa fa-spinner"></span>
+        <span style="font-weight: bold;font-size:100%;">Thinksprout<br></span>
+      </h4>
+      <span class="ti-menu-alt"></span>
+    </div>
+
+
+
+    <div class="sidebar-menu1 ">
+      <ul>
+        <!-- 
+
+        <li>
+          <a href="">
+            <span class="ti-home"></span>
+            <span>Home</span>
+          </a>
+        </li> -->
+
+
+        <li>
+          <a href="index.html">
+            <div class="fa fa-paper-plane "></div>
+            <span>Leads</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="bids.html">
+            <div class="fa fa-gavel"></div>
+            <span>Bids</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="project.html">
+            <div class="fa fa-bullseye"></div>
+            <span>Projects</span>
+          </a>
+        </li>
+
+
+        <!-- <li>
+          <a href="">
+            <span class="ti-agenda"></span>
+
+            <button class="accordion">Messages</button>
+            <div class="my-panel">
+              <span>inbox</span>
+              <br>
+              <span>sent</span>
+            </div>
+          </a>
+        </li> -->
+
+        <div class="fa fa-envelope-o"></div>
+        <button class="accordion">Messages</button>
+        <div class="my-panel">
+
+          <a href="inbox.html">
+            <div id="sender" class="fa fa-inbox"></div>
+            <span>Inbox</span>
+          </a>
+          <br>
+
+          <a href="sent.html">
+            <div class="fa fa-mail-reply"></div>
+            <span>Sent</span>
+          </a>
+          <br><br>
+        </div>
+
+        <div class="fa fa-home"></div>
+        <button class="accordion">Profile</button>
+        <div class="my-panel">
+          <a href="">
+            <div class="fa fa-tags"></div>
+            <span>Basic info</span>
+          </a>
+          <br>
+
+          <a href="">
+            <div class="fa fa-credit-card"></div>
+            <span>Bank Details</span>
+          </a>
+          <br>
+
+          <a href="">
+            <div class="fa fa-search-plus"></div>
+            <span>Talent & Skills</span>
+          </a>
+          <br>
+
+          <a href="">
+            <div class="fa fa-gear"></div>
+            <span>Services</span>
+          </a>
+          <br>
+
+          <a href="">
+            <div class="fa fa-gears"></div>
+            <span>Other Services</span>
+          </a><br><br>
+
+        </div>
+
+        <li>
+          <a href="agency.html">
+            <div class="fa fa-square-o"></div>
+            <span>Qik Projects</span>
+          </a>
+        </li>
+
+
+        <li>
+          <a href="">
+            <div class="fa fa-phone"></div>
+            <span>Contacts</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="">
+            <div class="fa fa-user"></div>
+            <span>Account</span>
+          </a>
+        </li>
+      </ul>
+      <hr>
+      <br>
+
+      <div>
+
+        <div style="font-size: 13px;color: #fff; text-decoration: none;" id="Copyright" class="text-center">&copy;
+          Copyright - All rights
+          reserved
+        </div>
+        <br>
+        <a href="#" target="_blank" style="text-decoration: underline;font-size: 11px;color: #fff;"> TERMS OF USE FOR
+          PARTNERS</a><br>
+        <a href="#" target="_blank" style="text-decoration: underline; font-size: 11px; color: #fff;">PRIVACY POLICY</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="main-content">
+    <my-header>
+      <div class="search-wrapper">
+        <span class="ti-search"> </span>
+        <input type="search" placeholder="search">
+      </div>
+
+      <div class="social-icons">
+        <i class=" fa fa-envelope fa-1x"></i>
+        <span class="ti-bell fa-1x"></span>
+        <span class="fa fa-question-circle-o fa-1x"></span>
+        <span class="fa fa-user-circle-o fa-1x"></span>
+      </div>
+    </my-header>
+    <main>
+
+
+
+
+      <div class="outer_container">
+
+        <?php
+
+              $query = "SELECT * FROM carddetails";
+
+              $select_cards = mysqli_query($connection,$query);
+
+      
+
+              while($row = mysqli_fetch_assoc($select_cards)){
+
+                $name = $row['Name'];
+
+                $date = $row['Date'];
+
+                $description = $row['Descripition'];
+
+                $type = $row['Type'];
+
+                $category = $row['Category'];
+
+                $industry = $row['Industry'];
+
+                $budget = $row['Budget']
+
+                ?>
+
+
+
+        <script>
+
+          $(document).ready(function () {
+
+            $(".Bid_tab").hide();
+
+            $(".Bid").css("background", "#a49e9e");
+
+            $(".Contract_tab").hide();
+
+            $(".contract").css("background", "#a49e9e");
+
+            $(".Delivery_tab").hide();
+
+            $(".delivery").css("background", "#a49e9e");
+
+
+
+            $(".Bid").click(function () {
+
+              $(".Project_tab").hide();
+
+              $(".Contract_tab").hide();
+
+              $(".Delivery_tab").hide();
+
+              $(".Bid_tab").show();
+
+              $(".delivery").css("background", "#a49e9e");
+
+              $(".Project").css("background", "#a49e9e");
+
+              $(".contract").css("background", "#a49e9e");
+
+              $(".Bid").css("background", "#fff");
+
+            });
+
+
+
+            $(".Project").click(function () {
+
+              $(".Project_tab").show();
+
+              $(".Contract_tab").hide();
+
+              $(".Delivery_tab").hide();
+
+              $(".Bid_tab").hide();
+
+              $(".Project").css("background", "#fff");
+
+              $(".contract").css("background", "#a49e9e");
+
+              $(".delivery").css("background", "#a49e9e");
+
+              $(".Bid").css("background", "#a49e9e");
+
+            });
+
+
+
+            $(".contract").click(function () {
+
+              $(".Contract_tab").show();
+
+              $(".Project_tab").hide();
+
+              $(".Bid_tab").hide();
+
+              $(".Delivery_tab").hide();
+
+              $(".contract").css("background", "#fff");
+
+              $(".Project").css("background", "#a49e9e");
+
+              $(".delivery").css("background", "#a49e9e");
+
+              $(".Bid").css("background", "#a49e9e");
+
+            });
+
+
+
+            $(".delivery").click(function () {
+
+              $(".Delivery_tab").show();
+
+              $(".Contract_tab").hide();
+
+              $(".Project_tab").hide();
+
+              $(".Bid_tab").hide();
+
+              $(".delivery").css("background", "#fff");
+
+              $(".contract").css("background", "#a49e9e");
+
+              $(".Project").css("background", "#a49e9e");
+
+              $(".Bid").css("background", "#a49e9e");
+
+            });
+
+          });
+
+        </script>
+
+        <div class="container">
+
+          <div class="Project">project</div>
+
+          <div class="Bid">bid</div>
+
+          <div class="contract">Contract</div>
+
+          <div class="delivery">Delivery</div>
+
+          <div class="Project_tab">
+
+            <div class="container-inner"
+              style="background-color: White; border: 2px solid black; border-radius: 5px; margin: 0; width: 100%; min-height: 350px;">
+
+              <div class="title">Promotion of our educational website</div>
+
+              <div class="date"><small>16/06/2020</small></div>
+
+              <div class="company">Customer Company Name : </div>
+
+              <div class="status">Status :</div>
+
+              <div class="description">Description : WE intend to promote our site which intends to provide, Notes,
+                Video Lectures and Test Series for UPSC Civil Services Law Optional Subject. 1. Who all will be our
+                competitors? - Any oth</div>
+
+            </div>
+
+          </div>
+
+
+
+          <div class="Bid_tab">
+
+            <div class="container-inner"
+              style="background-color: white; border:2px solid Black; border-radius: 5px; margin: 0 ; width: 100%; min-height: 150px;">
+
+              <div class="inline">
+    </main>
+
+  </div>
+
+
+  <!--  adding colapsible my-panels in sidebar -->
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var myPanel = this.nextElementSibling;
+        if (myPanel.style.maxHeight) {
+          myPanel.style.maxHeight = null;
+        } else {
+          myPanel.style.maxHeight = myPanel.scrollHeight + "px";
+        }
+      });
+    }
+  </script>
+
+
+</body>
+
+</html>
