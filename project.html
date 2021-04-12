@@ -190,36 +190,33 @@
     </my-header>
     <main>
 
-
-
-
       <div class="outer_container">
 
         <?php
-
-              $query = "SELECT * FROM carddetails";
-
-              $select_cards = mysqli_query($connection,$query);
-
-      
-
-              while($row = mysqli_fetch_assoc($select_cards)){
-
-                $name = $row['Name'];
-
-                $date = $row['Date'];
-
-                $description = $row['Descripition'];
-
-                $type = $row['Type'];
-
-                $category = $row['Category'];
-
-                $industry = $row['Industry'];
-
-                $budget = $row['Budget']
-
-                ?>
+    
+                  $query = "SELECT * FROM carddetails";
+    
+                  $select_cards = mysqli_query($connection,$query);
+    
+          
+    
+                  while($row = mysqli_fetch_assoc($select_cards)){
+    
+                    $name = $row['Name'];
+    
+                    $date = $row['Date'];
+    
+                    $description = $row['Descripition'];
+    
+                    $type = $row['Type'];
+    
+                    $category = $row['Category'];
+    
+                    $industry = $row['Industry'];
+    
+                    $budget = $row['Budget']
+    
+                    ?>
 
 
 
@@ -370,6 +367,104 @@
               style="background-color: white; border:2px solid Black; border-radius: 5px; margin: 0 ; width: 100%; min-height: 150px;">
 
               <div class="inline">
+
+                <div class="bidamount">Bid Amount : </div>
+
+                <div class="date">Date: </div>
+
+              </div>
+
+              <div class="estimation">Estimation :
+
+                There will be 3 types of ads posting in which the traffic to your website will be generated. The 3
+                platforms are as follows : 1) Facebook / Instagram/ Google/ Twitte
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+          <div class="Contract_tab">
+
+            <div class="container-inner"
+              style="background-color: White; border:2px solid Black; border-radius: 5px; margin: 0 ; width: 100%; min-height: 250px;">
+
+              <div class="inline">
+
+                <div class="projectvalue">Project Value (INR) : </div>
+
+                <div class="duration">Duration : </div>
+
+              </div>
+
+              <div class="inline">
+
+                <div class="startdate">Start Date :</div>
+
+                <div class="enddate">End Date :</div>
+
+              </div>
+
+              <div class="clientdetails">
+
+                <h3>Client Contact Details</h3>
+
+                <div class="inline">
+
+                  <div class="clientname">Name : </div>
+
+                  <div class="clientnumber">Contact Number : </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="Delivery_tab">
+
+            <div class="container-inner"
+              style="  padding: 20px;background-color: white; border:2px solid Black; border-radius: 5px; margin: 0 ; width: 100%; min-height: 200px;">
+
+              <div><a href="#" class="paymentrequest">Create payment request</a></div>
+
+              <div class="mainbox">
+
+                <div class="inline">
+
+                  <div class="amount">Amount (INR): </div>
+
+                  <div class="date">Date: </div>
+
+                  <div class="attachments"> Attachments: </div>
+
+                </div>
+
+                <div class="remarks">Remarks: As per the Facebook/Instagram/Google policy for campaigning, We are
+                  required to pay the exact mentioned amount. As till then, there are no inclusive service charges by
+                  Thinksprout Infot</div>
+
+                <div class="status">Status: </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+        </div>
+
+        <?php } ?>
+
+      </div>
+
     </main>
 
   </div>
